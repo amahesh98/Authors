@@ -1,0 +1,9 @@
+<a href='#' [routerLink]="['/']">Home</a>
+<p class='red'>{{message}}</p>
+<h3>Add a new author!</h3>
+<form (submit)='create()'>
+  <p>Name:</p>
+  <input type='text' name='name' placeholder='name' [(ngModel)]='authName'><br>
+  <button [routerLink]="['/']">Cancel</button>
+  <input type='submit' value='Submit'>
+</form>
